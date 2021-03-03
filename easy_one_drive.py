@@ -10,17 +10,22 @@ from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
-from win32com.client import Dispatch #Solo para windows
+# NOTE: if you are using using Google Colab or other virtual environment that use webdriver.Chrome, ignore driver_path
 
 class easy_one_drive:
     
-    def __init__(self,correo,contra,driver_path):
+    def __init__(self,correo,contra,driver_path='',chromedriver=''):
         self.correo = correo
         self.contra = contra
-        self.driver_path = driver_path
-        options = webdriver.ChromeOptions()
-        options.add_argument("--start-maximized")
-        self.driver = webdriver.Chrome(self.driver_path, chrome_options=options)
+        if driver_path!=''
+            self.driver_path = driver_path
+            options = webdriver.ChromeOptions()
+            options.add_argument("--start-maximized")
+            self.driver = webdriver.Chrome(self.driver_path, chrome_options=options)
+            self.chromedriver = chromedriver
+        else:
+            self.driver_path = driver_path
+            self.driver = chromedriver
     
     def logging_in(self):
         # Login your account
