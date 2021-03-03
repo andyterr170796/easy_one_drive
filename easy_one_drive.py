@@ -29,7 +29,7 @@ class easy_one_drive:
     
     def logging_in(self):
         # Login your account
-        print('Login into account ',self.correo)
+        print('Login into account',self.correo)
         self.driver.get("https://onedrive.live.com/about/es-es/signin/")
         time.sleep(15)
         self.driver.switch_to.frame(1)
@@ -50,7 +50,7 @@ class easy_one_drive:
         time.sleep(20)
 
         if isinstance(pat,list):
-            print('Downloading ', len(pat), 'files of the list, remember to be specific :D')
+            print('Downloading', len(pat), 'files of the list, remember to be specific :D')
             cajas = []
             
             for i in range(0,len(pat)):
