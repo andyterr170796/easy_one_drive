@@ -1,3 +1,12 @@
+import os
+os.chdir(r'your_directory') # where the dependencies will be stored
+!git clone https://github.com/andyterr170796/easy_one_drive.git
+
+# Just one time, then only proceed from line 10
+import sys
+sys.path.insert(0,os.path.join(os.getcwd(),'easy_one_drive'))
+# Ready to go!
+
 from easy_one_drive import easy_one_drive
 
 # Set the class to object "s"
