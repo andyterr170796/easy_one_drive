@@ -17,7 +17,7 @@ class easy_one_drive:
     def __init__(self,correo,contra,driver_path='',chromedriver=''):
         self.correo = correo
         self.contra = contra
-        if driver_path!=''
+        if driver_path!='':
             self.driver_path = driver_path
             options = webdriver.ChromeOptions()
             options.add_argument("--start-maximized")
