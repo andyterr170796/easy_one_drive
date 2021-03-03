@@ -1,7 +1,4 @@
-
-correo = '' #write your hotmail/outlook email
-contra = '' #write your password
-path = '' #write your chromedriver.exe path
+from easy_one_drive import easy_one_drive
 
 # Set the class to object "s"
 s = easy_one_drive(correo, contra, path)
