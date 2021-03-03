@@ -49,7 +49,7 @@ class easy_one_drive:
         self.driver.get(url)       
         time.sleep(20)
 
-        if isinstance(pat,type(list)):
+        if isinstance(pat,list):
             print('Downloading ', len(pat), 'files of the list, remember to be specific :D')
             cajas = []
             
