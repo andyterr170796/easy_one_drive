@@ -6,3 +6,5 @@ Always you must to attribute the class to an object with yout credentials and we
 
 It is pretty much it! Try to run "test.py" for more details, and this video in case you would like to see how to install selenium correctly:
 https://www.youtube.com/watch?v=-Nf9C3k_x1Y
+
+In adition!!!! if you use Google Colab or other similars, you can see the "test.ipynb" for an example with Google Colab!
