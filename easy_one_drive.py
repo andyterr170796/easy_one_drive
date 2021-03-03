@@ -12,10 +12,6 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 from win32com.client import Dispatch #Solo para windows
 
-correo = '' #write your hotmail/outlook email
-contra = '' #write your password
-path = '' #write your chromedriver.exe path
-
 class easy_one_drive:
     
     def __init__(self,correo,contra,driver_path):
