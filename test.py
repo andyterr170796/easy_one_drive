@@ -10,7 +10,7 @@ sys.path.insert(0,os.path.join(os.getcwd(),'easy_one_drive'))
 from easy_one_drive import easy_one_drive
 
 # Set the class to object "s"
-s = easy_one_drive(correo, contra, path)
+s = easy_one_drive('', '', driver_path='')
 
 # First you must logging in
 s.logging_in()
