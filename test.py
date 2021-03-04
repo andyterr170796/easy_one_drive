@@ -24,10 +24,10 @@ s.download_file('url','.xlsx') # Here all files with extension '.xlsx' will be d
 ### NOTE: CAN'T use REGEX, so a suggestion is first create a list with files you want to download like in the next lines:
 
 ## Now let's download only 2 files, you only must set URL where files are located, then the files to download (in list, with their extensions), and optionally the waiting time
-s.download_file('url',['informe limpio del 2021-02-02.xlsx','informe limpio del 2021-02-03.xlsx']) # Like before, optionally you can change waiting time after set the list
+s.download_file('url',['archivo1.xlsx','archivo2.xlsx']) # Like before, optionally you can change waiting time after set the list
 
 ## For download an entire folder (more robust if you want all files)
-s.download_folder('url',"Quantico-informes_diarios") # Here given the url, will download the folder with the name specified, and you can change waiting time
+s.download_folder('url',"folder_name") # Here given the url, will download the folder with the name specified, and you can change waiting time
 
 ## In case of uploading you must specify the complete route of the file to upload like this:
 archivo = r"C:\Users\IDEAPAD530S\data_todo.dta"
