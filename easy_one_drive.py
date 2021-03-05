@@ -37,7 +37,7 @@ class easy_one_drive:
         self.driver.find_element_by_class_name('form-control').send_keys(self.correo)
         self.driver.find_element_by_class_name('form-control').send_keys(Keys.ENTER)
         time.sleep(15)
-        self.driver.find_element(By.ID, "i0118").send_keys(self.contra)
+        self.driver.find_element(By.XPATH, "//input[contains(@type,'password')]").send_keys(self.contra)
         time.sleep(10)
         self.driver.find_element(By.ID, "idSIButton9").click()
         time.sleep(5)
