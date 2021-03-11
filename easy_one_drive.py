@@ -42,7 +42,7 @@ class easy_one_drive:
         self.driver.find_element(By.ID, "idSIButton9").click()
         time.sleep(5)
         print('Logged in!')
-        print('Tip: you can change the uploading or downloagind waiting time. Default time: 300 seconds')
+        print('Tip: you can change the uploading or downloading waiting time. Default time: 300 seconds')
 
     def download_file(self,url,pat,espera=300):    
         # This works with pattern or vector of names
