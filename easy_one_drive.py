@@ -76,7 +76,7 @@ class easy_one_drive:
     def download_folder(self,url,nombre,espera=300):    
         # Download a complete folder
         self.driver.get(url)
-        time.sleep(10)
+        time.sleep(20)
         print("Downloading folder")
         self.driver.find_element(By.XPATH,'//div[contains(@data-automationid,"'+ nombre + '")]/span[contains(@role,"checkbox")]').click()
         time.sleep(4)
@@ -89,7 +89,7 @@ class easy_one_drive:
         # Path of file to upload
         print("Uploading file: ",archivo)
         self.driver.get(url)
-        time.sleep(10)
+        time.sleep(20)
         
         # Subir archivos
         self.driver.find_element(By.XPATH, "//i[contains(@data-icon-name,'Upload')]").click()
