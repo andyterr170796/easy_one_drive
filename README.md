@@ -8,3 +8,6 @@ It is pretty much it! Try to run "test.py" for more details, and this video in c
 https://www.youtube.com/watch?v=-Nf9C3k_x1Y
 
 In adition!!!! if you use Google Colab or other similars, you can see the "test.ipynb" for an example with Google Colab!
+
+Video where i explain the use of this repository:
+https://youtu.be/J5GIbzMGKbc
