@@ -41,6 +41,10 @@ class easy_one_drive:
         time.sleep(10)
         self.driver.find_element(By.ID, "idSIButton9").click()
         time.sleep(5)
+        try:
+            driver.find_element(By.XPATH,"//input[contains(@id,'idBtn_Back')]").click()
+        except:
+            pass
         print('Logged in!')
         print('Tip: you can change the uploading or downloading waiting time. Default time: 300 seconds')
 
