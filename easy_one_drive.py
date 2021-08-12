@@ -42,7 +42,7 @@ class easy_one_drive:
         self.driver.find_element(By.ID, "idSIButton9").click()
         time.sleep(5)
         try:
-            driver.find_element(By.XPATH,"//input[contains(@id,'idBtn_Back')]").click()
+            self.driver.find_element(By.XPATH,"//input[contains(@id,'idBtn_Back')]").click()
             time.sleep(4)
         except:
             pass
