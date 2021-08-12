@@ -43,6 +43,7 @@ class easy_one_drive:
         time.sleep(5)
         try:
             driver.find_element(By.XPATH,"//input[contains(@id,'idBtn_Back')]").click()
+            time.sleep(4)
         except:
             pass
         print('Logged in!')
